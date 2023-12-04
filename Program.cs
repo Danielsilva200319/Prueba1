@@ -21,11 +21,13 @@ internal class Program
             {
                 case 1:
                     NumeroAFibonnaci();
-                    Console.Write("Presione Enter para ir al menu");
+                    Console.Write("Presione Enter para ir al menu...");
                     Console.ReadKey();
                     break;
                 case 2:
-                    
+                    Confirmacion();
+                    Console.Write("Presione Enter para ir al menu...");
+                    Console.ReadKey();
                     break;
                 case 3:
                     
@@ -46,5 +48,22 @@ internal class Program
         Console.Write("\nEscriba un número entero: ");
         int num = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine($"F{num} = ");
+    }
+    public static void Confirmacion()
+    {
+        Console.Write("\nEscriba un número entero: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        if (number == 2)
+        {
+            Console.WriteLine($"{number} es un número Fibannoci");
+        }
+        else
+        {
+            Console.WriteLine($"{number} no es un número Fibannoci");
+        }
+    }
+    public static void Numeros()
+    {
+        
     }
 }

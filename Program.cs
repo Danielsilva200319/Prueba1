@@ -73,18 +73,15 @@ internal class Program
             Console.WriteLine("Ingrese un valor positivo");
             Console.WriteLine($"{number} no es un número Fibannoci");
         }
-        else if ()
-        {
-            
-        }
         else
         {
             int a = 0, b = 1, result = a + b;
             a = b;
-            b = result++;
+            b = result;
             result = a + b;
             Console.WriteLine($"{number} es un número Fibannoci");
         }
+        return;
     }
     public static void Numeros()
     {

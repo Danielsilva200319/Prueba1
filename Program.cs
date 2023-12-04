@@ -29,12 +29,15 @@ internal class Program
                     Numeros();
                     break;
                 case 0:
+                    Console.Clear();
                     Console.WriteLine("Gracias por utilizar el programa");
                     isActivate = false;
                     break;
                 default:
+                    Console.Clear();
                     Console.WriteLine("Error ingrese un valor válido");
-                    return;
+                    Console.ReadLine();
+                    break;
             }
         }
     }
@@ -79,10 +82,6 @@ de Fibonacci: */
         }
         else
         {
-            int a = 0, b = 1, result = a + b;
-            a = b;
-            b = result;
-            result = a + b;
             Console.WriteLine($"{number} es un número Fibannoci");
         }
         return;

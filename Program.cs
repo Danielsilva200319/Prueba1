@@ -38,6 +38,8 @@ internal class Program
             }
         }
     }
+    /* 1. Escriba un programa que reciba como entrada un número entero n, y entregue como salida el n-
+ésimo número de Fibonacci: */
     public static void NumeroAFibonnaci()
     {
 
@@ -64,6 +66,8 @@ internal class Program
             Console.WriteLine($"F{num} = {result}");
         }
     }
+    /* 2. Escriba un programa que reciba como entrada un número entero e indique si es o no un número
+de Fibonacci: */
     public static void Confirmacion()
     {
         Console.Write("\nEscriba un número entero: ");
@@ -83,6 +87,8 @@ internal class Program
         }
         return;
     }
+    /* 3. Escriba un programa que muestres los m primeros números de Fibonacci, donde m es un número
+ingresado por el usuario: */
     public static void Numeros()
     {
         

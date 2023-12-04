@@ -20,30 +20,31 @@ internal class Program
             switch (opcion)
             {
                 case 1:
-                    Console.Clear();
                     NumeroAFibonnaci();
+                    Console.Write("Presione Enter para ir al menu");
+                    Console.ReadKey();
                     break;
                 case 2:
-                    Console.Clear();
+                    
                     break;
                 case 3:
-                    Console.Clear();
+                    
                     break;
                 case 0:
-                    Console.Clear();
                     Console.WriteLine("Gracias por utilizar el programa");
                     isActivate = false;
                     break;
                 default:
-                    break;
+                    Console.WriteLine("Error ingrese un valor válido");
+                    return;
             }
         }
     }
     public static void NumeroAFibonnaci()
     {
-        Console.Write("Escriba un número entero: ");
+
+        Console.Write("\nEscriba un número entero: ");
         int num = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Hola Mundo");
         Console.WriteLine($"F{num} = ");
     }
 }

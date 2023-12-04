@@ -5,7 +5,6 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.Clear();
         Console.WriteLine("       Fibonnaci".ToUpper());
         Console.WriteLine("-----------------------------");
         Console.WriteLine("1. Número a Fibonnaci");
@@ -22,6 +21,7 @@ internal class Program
             {
                 case 1:
                     Console.Clear();
+                    NumeroAFibonnaci();
                     break;
                 case 2:
                     Console.Clear();
@@ -39,10 +39,11 @@ internal class Program
             }
         }
     }
-    public void NumeroAFibonnaci()
+    public static void NumeroAFibonnaci()
     {
         Console.Write("Escriba un número entero: ");
         int num = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Hola Mundo");
         Console.WriteLine($"F{num} = ");
     }
 }

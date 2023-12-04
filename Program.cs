@@ -20,7 +20,9 @@ internal class Program
             switch (opcion)
             {
                 case 1:
+                    Console.Clear();
                     NumeroAFibonnaci();
+                    Console.ReadLine();
                     break;
                 case 2:
                     Confirmacion();
@@ -56,17 +58,13 @@ internal class Program
         {
             Console.WriteLine(1);
         }
-        /* else if (num == 2)
-        {
-            Console.WriteLine(1);
-        } */
         else
         {
             int a = 0, b = 1, result = a + b;
+            result = a;
             a = b;
-            b = result++;
-            result = a + b;
-            Console.WriteLine($"F{num} = {result}");
+            b = result + b;
+            Console.WriteLine($"F{num} = {b}");
         }
     }
     /* 2. Escriba un programa que reciba como entrada un número entero e indique si es o no un número

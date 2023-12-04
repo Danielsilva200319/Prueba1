@@ -21,16 +21,12 @@ internal class Program
             {
                 case 1:
                     NumeroAFibonnaci();
-                    Console.Write("Presione Enter para ir al menu...");
-                    Console.ReadKey();
                     break;
                 case 2:
                     Confirmacion();
-                    Console.Write("Presione Enter para ir al menu...");
-                    Console.ReadKey();
                     break;
                 case 3:
-                    
+                    Numeros();
                     break;
                 case 0:
                     Console.WriteLine("Gracias por utilizar el programa");
@@ -47,19 +43,47 @@ internal class Program
 
         Console.Write("\nEscriba un número entero: ");
         int num = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine($"F{num} = ");
+        if (num <= 0)
+        {
+            Console.WriteLine("Ingrese un valor positivo");
+        }
+        else if (num == 1 || num == 2)
+        {
+            Console.WriteLine(1);
+        }
+        /* else if (num == 2)
+        {
+            Console.WriteLine(1);
+        } */
+        else
+        {
+            int a = 0, b = 1, result = a + b;
+            a = b;
+            b = result++;
+            result = a + b;
+            Console.WriteLine($"F{num} = {result}");
+        }
     }
     public static void Confirmacion()
     {
         Console.Write("\nEscriba un número entero: ");
         int number = Convert.ToInt32(Console.ReadLine());
-        if (number == 2)
+        if (number <= 0)
         {
-            Console.WriteLine($"{number} es un número Fibannoci");
+            Console.WriteLine("Ingrese un valor positivo");
+            Console.WriteLine($"{number} no es un número Fibannoci");
+        }
+        else if ()
+        {
+            
         }
         else
         {
-            Console.WriteLine($"{number} no es un número Fibannoci");
+            int a = 0, b = 1, result = a + b;
+            a = b;
+            b = result++;
+            result = a + b;
+            Console.WriteLine($"{number} es un número Fibannoci");
         }
     }
     public static void Numeros()
